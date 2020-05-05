@@ -7,6 +7,7 @@ import {fetchData} from './api/';
 class App extends React.Component {
     async componentDidMount (){
         const response = await fetchData()
+        console.log(response);
         
         
     }
