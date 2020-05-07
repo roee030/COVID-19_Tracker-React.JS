@@ -1,4 +1,37 @@
+
+
 .formControl {
   width: 30%;
   margin-bottom: 30px !important;
+  background-color: white  !important;
+}
+
+.container{
+  background-color: rgba(255, 255, 255, 0.8) !important;
+  margin-bottom: 3rem !important;
+  
+}
+
+@media only screen and (max-width: 360px) {
+
+  .wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    flex-direction: row;
+    padding: 1rem;
+  }
+  .container{
+    width: 60%;
+    background-color: white  !important;
+    align-items: center !important;
+  }
+  .container::before{
+    content: "Click here";
+    font-family: Arial, Helvetica, sans-serif;
+    
+  }
+
+
 }
