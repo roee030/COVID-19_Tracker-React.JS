@@ -4,7 +4,7 @@ import { Cards, CountryPicker, Chart } from './components';
 import { fetchData } from './api/';
 import styles from './App.module.css';
 import BackVideo from './images/1.mp4'
-import MidBackVideo from './images/mid.mp4';
+import MidBackVideo from './images/1111.mp4';
 import image from './images/image.png';
 
 class App extends React.Component {
@@ -41,8 +41,8 @@ class App extends React.Component {
       </div>
       <div className="styles.bg-video">
         <video className='styles.bg-video__content'  autoPlay loop muted>
-          <source src={BackVideo} type='video/mp4' media="all and (max-width: 900px)"/>
-          <source src={MidBackVideo} type="video/mp4" media="all and (max-width: 480px)"/> 
+          <source src={MidBackVideo} type='video/mp4' media="all and (max-width: 900px)"/>
+          <source src={BackVideo} type="video/mp4" media="all and (max-width: 480px)"/> 
         </video>
       </div>
       </>
