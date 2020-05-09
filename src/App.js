@@ -30,22 +30,22 @@ class App extends React.Component {
 
     return (
       
-      <>
       
-      <div className={styles.container}>
-      
-        <img className={styles.image} src={image} alt="COVID-19" />
-        <Cards data={data} />
-        <CountryPicker handleCountryChange={this.handleCountryChange} />
-        <Chart data={data} country={country} /> 
+      <div className={styles.header}>  
+        
+        <div className={styles.container}>
+          <img className={styles.image} src={image} alt="COVID-19" />
+          <Cards data={data} />
+          <CountryPicker handleCountryChange={this.handleCountryChange} />
+          <Chart data={data} country={country} /> 
+        </div>
+        <div className={styles.bg_video}>
+          <video autoPlay loop muted>
+            <source src={MidBackVideo} type='video/mp4' media="all and (max-width: 900px)"/>
+            <source src={BackVideo} type="video/mp4" media="all and (max-width: 480px)"/> 
+          </video>
+        </div>
       </div>
-      <div className="styles.bg-video">
-        <video className='styles.bg-video__content'  autoPlay loop muted>
-          <source src={MidBackVideo} type='video/mp4' media="all and (max-width: 900px)"/>
-          <source src={BackVideo} type="video/mp4" media="all and (max-width: 480px)"/> 
-        </video>
-      </div>
-      </>
     );
   }
 }
