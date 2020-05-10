@@ -7,6 +7,7 @@ body {
   top:0;
   left:0;
   width:100%;
+  
   z-index:1;
   opacity:0.85;
 }
@@ -15,14 +16,13 @@ body {
   position: absolute;
   object-fit: cover;
   width: 98vw;
-  height: 100%;
   top:0;
   left:0;
   height: 100vh;
 }
 
 .header {
-  height: 100vh;
+  height: 100% !important;
   width: 90%;
   position: relative;
 }
@@ -34,20 +34,18 @@ body {
   right: 0; 
   margin-left: auto; 
   margin-right: auto; 
-  margin-top: 2rem;
+  margin-top: 1rem;
   display: flex;
   align-items: center;
   flex-direction: column;
   
   width: 70%;
-  background-color: rgba(153,50,204, 0.4);
-  border-radius: 20%;
-  border: 0.2px solid rgb(180, 26, 34);
+ 
 }
 
 .image {
   width: 370px;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 @media only screen and (max-width: 600px) {
